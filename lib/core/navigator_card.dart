@@ -16,8 +16,8 @@ class CardWithNavigator extends StatelessWidget {
       child: Card(
         child: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
           Stack(alignment: Alignment.center, children: [
-            Image.asset(imagePath, height: 50, color: Colors.deepOrange),
-            const Text("?", style: TextStyle(fontSize: 40))
+            Image.asset(imagePath, height: 50, color: Colors.white),
+            const Text("?", style: TextStyle(fontSize: 40, color: Colors.deepOrange))
           ]),
           Text(
             "Guess which country the flag on the screen belongs to and earn points!",

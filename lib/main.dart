@@ -14,18 +14,18 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
           useMaterial3: true,
-          scaffoldBackgroundColor: Colors.deepOrange,
-          cardTheme: const CardTheme(color: Colors.white, margin: EdgeInsets.symmetric(horizontal: 20)),
-          textTheme: const TextTheme(
-              labelMedium: TextStyle(color: Colors.deepOrange, fontWeight: FontWeight.w600, fontSize: 20)),
+          scaffoldBackgroundColor: Colors.white,
+          cardTheme: const CardTheme(color: Colors.deepOrange, margin: EdgeInsets.symmetric(horizontal: 20)),
+          textTheme: const TextTheme(labelMedium: TextStyle(fontWeight: FontWeight.w600, fontSize: 20)),
           elevatedButtonTheme: ElevatedButtonThemeData(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.deepOrange, foregroundColor: Colors.white)),
+              style: ElevatedButton.styleFrom(backgroundColor: Colors.white, foregroundColor: Colors.deepOrange)),
           appBarTheme: const AppBarTheme(
-            titleTextStyle: TextStyle(fontSize: 25, fontWeight: FontWeight.bold),
-            centerTitle: false,
-            elevation: 0,
-            backgroundColor: Colors.transparent,
-          )),
+              titleTextStyle: TextStyle(
+                fontSize: 25,
+                fontWeight: FontWeight.bold,
+              ),
+              centerTitle: false,
+              backgroundColor: Colors.deepOrange)),
       home: const ChoosingView(),
     );
   }

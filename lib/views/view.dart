@@ -2,8 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:quiz_app/core/navigator_card.dart';
 import 'package:quiz_app/core/standart_button.dart';
 import 'package:quiz_app/product/image_items.dart';
-import 'package:quiz_app/views/flag_quiz_view.dart';
-import 'package:quiz_app/views/football_teams_quiz_view.dart';
+import 'package:quiz_app/views/starting_view.dart';
 
 class ChoosingView extends StatelessWidget {
   const ChoosingView({super.key});
@@ -17,7 +16,8 @@ class ChoosingView extends StatelessWidget {
           CardWithNavigator(
               button: CoreButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FlagQuizView()));
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) => const StartingView(isLogo: false)));
                   },
                   buttonTitle: "Country Flags Quiz"),
               imagePath: ImageItems.unknownFlag),
@@ -25,11 +25,16 @@ class ChoosingView extends StatelessWidget {
           CardWithNavigator(
               button: CoreButton(
                   onPressed: () {
-                    Navigator.of(context).push(MaterialPageRoute(builder: (context) => const FootballTeamsQuizView()));
+                    Navigator.of(context)
+                        .push(MaterialPageRoute(builder: (context) => const StartingView(isLogo: true)));
                   },
                   buttonTitle: "Football Teams Logo Quiz"),
               imagePath: ImageItems.unknownLogo),
-          const Text("github.com/kadirkyr\n2023", textAlign: TextAlign.center)
+          const Text(
+            "github.com/kadirkyr\n2023",
+            textAlign: TextAlign.center,
+            style: TextStyle(color: Colors.deepOrange),
+          )
         ]),
       ),
     );
