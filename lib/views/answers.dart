@@ -61,7 +61,6 @@ class _AnswersState extends State<Answers> {
   void initState() {
     super.initState();
     changeAnswers();
-    randomControl();
   }
 
   @override
