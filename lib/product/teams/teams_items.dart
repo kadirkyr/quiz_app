@@ -1,23 +1,25 @@
+class Team {
+  final String team;
+  final String logo;
+  late final String getLogo = "assets/images/logos/$logo.png";
+
+  Team({required this.team, required this.logo});
+}
+
 class TeamItems {
-  Map<String, String> Teams = {TeamsLanguageItems.atleticoMadrid: TeamsImageItems.atleticoPNG};
-}
-
-class TeamsLanguageItems {
-  static const String atleticoMadrid = "Atletico Madrid";
-  static const String realMadrid = "Real Madrid";
-  static const String barcelona = "Barcelona FC";
-  static const String chelsea = "Chelsea FC";
-  static const String fenerbahce = "Fenerbahçe SK";
-  static const String arsenal = "Arsenal";
-  static const String besiktas = "Beşiktaş JK";
-  static const String galatasaray = "Galatasaray SK";
-  static const String manUtd = "Manchester United";
-  static const String inter = "Internazionale";
-  static const String psg = "Paris Saint-Germain";
-  static const String marseille = "Marseille FC";
-  static const String liverpool = "Liverpool";
-}
-
-class TeamsImageItems {
-  static const String atleticoPNG = "assets/images/logos/atletico.png";
+  List<Team> teams = [
+    Team(team: "Fenerbahçe", logo: "fenerbahce"),
+    Team(team: "Atletico Madrid", logo: "atletico"),
+    Team(team: "Real Madrid", logo: "realMadrid"),
+    Team(team: "Barcelona FC", logo: "barcelona"),
+    Team(team: "Arsenal", logo: "arsenal"),
+    Team(team: "Beşiktaş", logo: "besiktas"),
+    Team(team: "Chelsea FC", logo: "chelsea"),
+    Team(team: "Galatasaray SK", logo: "galatasaray"),
+    Team(team: "Manchester United", logo: "manUtd"),
+    Team(team: "Internazionale", logo: "inter"),
+    Team(team: "Paris Saint-Germain", logo: "psg"),
+    Team(team: "Marseille FC", logo: "marseille"),
+    Team(team: "Liverpool", logo: "liverpool"),
+  ];
 }
