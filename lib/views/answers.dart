@@ -40,7 +40,6 @@ class _AnswersState extends State<Answers> {
   void falseAnswers() {
     setState(() {
       changeAnswers();
-      randomControl();
       totalPoints -= 10;
     });
   }
