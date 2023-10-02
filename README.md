@@ -1,6 +1,6 @@
 # quiz_app
 
-I developed quiz app without Firebase.
+## I developed quiz app without Firebase.
 
 ![Simulator Screenshot - iPhone 13 - 2023-10-02 at 14 17 26](https://github.com/kadirkyr/quiz_app/assets/126793336/26048aed-2258-45cb-8d75-d76a13d0e6d8)
 ![Simulator Screenshot - iPhone 13 - 2023-10-02 at 14 18 06](https://github.com/kadirkyr/quiz_app/assets/126793336/8abcf59c-ef73-404b-a284-06ba85942bf9)
