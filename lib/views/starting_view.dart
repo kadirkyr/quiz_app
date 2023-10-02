@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:quiz_app/core/start_button.dart';
-import 'package:quiz_app/views/answers.dart';
+import 'package:quiz_app/product/edge_insets_items.dart';
+import 'package:quiz_app/views/answers/answers.dart';
 
 class StartingView extends StatelessWidget {
   const StartingView({super.key, required this.isLogo});
@@ -22,9 +23,12 @@ class StartingView extends StatelessWidget {
         title: Text(isLogo ? _logoTitle : _countryTitle),
       ),
       body: Column(mainAxisAlignment: MainAxisAlignment.spaceEvenly, children: [
-        Text(checkString(),
-            style: Theme.of(context).textTheme.labelMedium?.copyWith(color: Colors.deepOrange),
-            textAlign: TextAlign.center),
+        Padding(
+          padding: EdgeInsetsItems.horizontalStd,
+          child: Text(checkString(),
+              style: Theme.of(context).textTheme.labelMedium?.copyWith(color: Colors.deepOrange),
+              textAlign: TextAlign.center),
+        ),
         StartButton(
           page: Answers(isLogo: isLogo),
         )

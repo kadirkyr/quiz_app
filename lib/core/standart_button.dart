@@ -11,14 +11,14 @@ class CoreButton extends StatelessWidget {
     return SizedBox(
       width: MediaQuery.of(context).size.width,
       child: Padding(
-        padding: EdgeInsetsItems.horizontalStd,
+        padding: EdgeInsetsItems.horizontalStd2x,
         child: ElevatedButton(
             onPressed: onPressed,
             style: ElevatedButton.styleFrom(
               backgroundColor: isReversedColor ? Colors.deepOrange : null,
               foregroundColor: isReversedColor ? Colors.white : null,
             ),
-            child: Text(buttonTitle)),
+            child: Text(buttonTitle, style: const TextStyle(fontSize: 20, fontWeight: FontWeight.w600))),
       ),
     );
   }

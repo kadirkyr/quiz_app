@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:quiz_app/views/view.dart';
+import 'package:quiz_app/views/lobby_view.dart';
 
 void main(List<String> args) {
   runApp(const MyApp());
@@ -11,6 +11,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      title: "Quiz App",
       debugShowCheckedModeBanner: false,
       theme: ThemeData.dark().copyWith(
           useMaterial3: true,
@@ -26,7 +27,7 @@ class MyApp extends StatelessWidget {
               ),
               centerTitle: false,
               backgroundColor: Colors.deepOrange)),
-      home: const ChoosingView(),
+      home: const LobbyView(),
     );
   }
 }
